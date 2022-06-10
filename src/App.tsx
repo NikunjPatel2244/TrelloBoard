@@ -14,7 +14,7 @@ function App() {
     })
     setTask(nextData);
   }
-  
+
   return (
     <div className="App">
       <h1>Trello Board</h1>
