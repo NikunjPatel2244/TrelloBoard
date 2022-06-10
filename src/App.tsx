@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Board from 'react-trello';
+import data from "./data.json";
 
 function App() {
+  const [task, setTask] = useState(data);
+
+  const newData = (nextData: any) => {
+    nextData.lanes.map((item: any) => {
+      let count = item.cards.length;
+      item.label = count.toString();
+      return item
+    })
+    setTask(nextData);
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Trello Board</h1>
+      <Board
+        data={task}
+        draggable
+        editable
+        canAddLanes
+        addLaneTitle="Add Column"
+        addCardTitle="Add Item"
+        onDataChange={newData}
+      />
     </div>
   );
 }

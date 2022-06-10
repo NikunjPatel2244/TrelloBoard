@@ -1,0 +1,77 @@
+{
+    "lanes": [
+      {
+        "id": "TODO",
+        "title": "TODO",
+        "label": 4,
+        "style": {
+          "width": 280
+        },
+        "cards": [
+          {
+            "id": "1",
+            "title": "Button Component",
+            "label": "",
+            "description": "Need to change Button Color."
+          },
+          {
+            "id": "2",
+            "title": "Button",
+            "label": "",
+            "description": "Button Size should Small Medium Large."
+          },
+          {
+            "id": "3",
+            "title": "Card",
+            "label": "",
+            "description": "Card should be simple and card with image."
+          },
+          {
+            "id": "4",
+            "title": "Button with Icon",
+            "label": "",
+            "description": "Icon should be on left side in Icon Button."
+          }
+        ]
+      },
+      {
+        "id": "IN-PROGRESS",
+        "title": "In Progress",
+        "label": 1,
+        "style": {
+          "width": 280
+        },
+        "cards": [
+          {
+            "id": "5",
+            "title": "Radio Group",
+            "label": "",
+            "description": "Radio Button should have clear option."
+          }
+        ]
+      },
+      {
+        "id": "DONE",
+        "title": "DONE",
+        "style": {
+          "width": 280
+        },
+        "label": 2,
+        "cards": [
+          {
+            "id": "6",
+            "title": "Icon Button",
+            "label": "",
+            "description": "Need simple Icon button."
+          },
+          {
+            "id": "7",
+            "title": "Icon Button Size",
+            "label": "",
+            "description": "Icon Button Size should Small Medium Large."
+          }
+        ]
+      }
+    ]
+  }
+  
